@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<!-- edited with XMLSpy v2007 sp2 (http://www.altova.com) by seb (PASSION) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:b="http://schemas.microsoft.com/BizTalk/2003" xmlns:mstns="http://tempuri.org/FICH_CTRL.xsd" xmlns="http://tempuri.org/FICH_CTRL.xsd" targetNamespace="http://tempuri.org/FICH_CTRL.xsd" id="FICH_CTRL">
+	<xs:annotation>
+		<xs:documentation>Schema name: fichiercontrole</xs:documentation>
+		<xs:appinfo>
+			<b:SelectionFields/>
+		</xs:appinfo>
+	</xs:annotation>
+	<xs:element name="FICH_CTRL">
+		<xs:complexType mixed="false">
+			<xs:sequence>
+				<xs:element name="FICH_DP" maxOccurs="unbounded">
+					<xs:complexType>
+						<xs:attribute name="NO_ATTES" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:positiveInteger">
+									<xs:pattern value="([0-9]){7,7}"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="NBR_TOT_DP" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:positiveInteger">
+									<xs:pattern value="([0-9]){5,5}"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="TOT_ENVOI" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:nonNegativeInteger">
+									<xs:pattern value="([0-9]){9,9}"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="REMU" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="M"/>
+									<xs:enumeration value="O"/>
+									<xs:enumeration value="D"/>
+									<xs:enumeration value="H"/>
+									<xs:enumeration value="S"/>
+									<xs:enumeration value="X"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="NOM_FICH" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="13"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="DEVPR" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:minLength value="5"/>
+									<xs:maxLength value="5"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="LOGCL" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="15"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="VERSI" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:maxLength value="5"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

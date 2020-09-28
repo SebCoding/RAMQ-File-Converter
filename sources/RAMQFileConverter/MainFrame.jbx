@@ -1,0 +1,19 @@
+[PropertyInfo]
+fc,javax.swing.JFileChooser,false,false, , ,false,<default>
+files,java.util.List,false,false, , ,false,<default>
+JButton1,javax.swing.JButton,false,false, , ,false,<default>
+JButton2,javax.swing.JButton,false,false, , ,false,<default>
+JButton3,javax.swing.JButton,false,false, , ,false,<default>
+JLabel1,javax.swing.JLabel,false,false, , ,false,<default>
+JMenuBar1,javax.swing.JMenuBar,false,false, , ,false,<default>
+JMenuFile,javax.swing.JMenu,false,false, , ,false,<default>
+JMenuFileExit,javax.swing.JMenuItem,false,false, , ,false,<default>
+JMenuHelp,javax.swing.JMenu,false,false, , ,false,<default>
+JMenuHelpAbout,javax.swing.JMenuItem,false,false, , ,false,<default>
+JScrollPane1,javax.swing.JScrollPane,false,false, , ,false,<default>
+JTextArea1,javax.swing.JTextArea,false,false, , ,false,<default>
+[IconNames]
+
+
+
+
