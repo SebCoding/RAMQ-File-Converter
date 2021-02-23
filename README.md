@@ -1,3 +1,5 @@
 ![RAMQ Logo](RAMQ.jpg)
 # RAMQ File Converter
-Creates dentist/doctor billing  information in XML format for submitting to the RAMQ (Régie de l'assurance maladie du Québec).
+Software that I built for a dentist cabinet that allows them submit their billing transactions and data in the new mandatory XML format required by to the [RAMQ (Régie de l'assurance maladie du Québec)](https://www.ramq.gouv.qc.ca/en).
+ 
+ 
